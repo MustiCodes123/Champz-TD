@@ -5,21 +5,12 @@ using UnityEngine;
 /// </summary>
 public class BuildSite : MonoBehaviour
 {
-    [Header("Visual")]
-    [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] private Color availableColor = Color.green;
-    [SerializeField] private Color occupiedColor = Color.red;
 
     private bool isOccupied = false;
     private GameObject placedTower;
 
     void Start()
-    {
-        if (spriteRenderer == null)
-            spriteRenderer = GetComponent<SpriteRenderer>();
-
-        UpdateVisuals();
-        
+    { 
         // Ensure proper tag
         if (!gameObject.CompareTag("BuildSite"))
             gameObject.tag = "BuildSite";
@@ -31,7 +22,6 @@ public class BuildSite : MonoBehaviour
     {
         isOccupied = true;
         placedTower = tower;
-        UpdateVisuals();
     }
 
     public GameObject GetPlacedTower() => placedTower;
@@ -43,14 +33,6 @@ public class BuildSite : MonoBehaviour
         
         isOccupied = false;
         placedTower = null;
-        UpdateVisuals();
     }
 
-    private void UpdateVisuals()
-    {
-        if (spriteRenderer != null)
-        {
-            spriteRenderer.color = isOccupied ? occupiedColor : availableColor;
-        }
-    }
 }
