@@ -32,9 +32,10 @@ public class Tower : MonoBehaviour
     private float fireCountdown = 0f;
 
     // Animation parameters
-    private const string ANIM_DIRECTION_X = "DirectionX";
-    private const string ANIM_DIRECTION_Y = "DirectionY";
-    private const string ANIM_IS_ATTACKING = "IsAttacking";
+    private const string ANIM_ATTACK_LEFT = "AttackLeft";
+    private const string ANIM_ATTACK_RIGHT = "AttackRight";
+    private const string ANIM_ATTACK_UP = "AttackUp";
+    private const string ANIM_ATTACK_DOWN = "AttackDown";
 
     void Start()
     {
@@ -129,29 +130,46 @@ public class Tower : MonoBehaviour
     {
         if (animator == null) return;
 
-        // Set attacking state
-        animator.SetBool(ANIM_IS_ATTACKING, hasTarget);
-
         if (hasTarget && currentTarget != null)
         {
             // Calculate direction to target
             Vector2 direction = (currentTarget.position - transform.position).normalized;
             
-            // Set directional animation parameters
-            animator.SetFloat(ANIM_DIRECTION_X, direction.x);
-            animator.SetFloat(ANIM_DIRECTION_Y, direction.y);
-
-            // Optional: Flip sprite based on direction
-            if (spriteRenderer != null && Mathf.Abs(direction.x) > 0.1f)
+            // Determine which direction animation to play based on angle
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            
+            // Reset all triggers
+            animator.ResetTrigger(ANIM_ATTACK_LEFT);
+            animator.ResetTrigger(ANIM_ATTACK_RIGHT);
+            animator.ResetTrigger(ANIM_ATTACK_UP);
+            animator.ResetTrigger(ANIM_ATTACK_DOWN);
+            
+            // Set appropriate attack trigger based on angle
+            // Right: -45 to 45 degrees
+            // Up: 45 to 135 degrees
+            // Left: 135 to -135 degrees (or 135 to 225)
+            // Down: -135 to -45 degrees (or 225 to 315)
+            
+            if (angle >= -45f && angle < 45f)
             {
-                spriteRenderer.flipX = direction.x < 0;
+                animator.SetTrigger(ANIM_ATTACK_RIGHT);
+            }
+            else if (angle >= 45f && angle < 135f)
+            {
+                animator.SetTrigger(ANIM_ATTACK_UP);
+            }
+            else if (angle >= 135f || angle < -135f)
+            {
+                animator.SetTrigger(ANIM_ATTACK_LEFT);
+            }
+            else // angle >= -135f && angle < -45f
+            {
+                animator.SetTrigger(ANIM_ATTACK_DOWN);
             }
         }
         else
         {
-            // Idle state - face down by default
-            animator.SetFloat(ANIM_DIRECTION_X, 0);
-            animator.SetFloat(ANIM_DIRECTION_Y, -1);
+            // Idle state - animator will return to idle automatically
         }
     }
 

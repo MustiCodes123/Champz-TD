@@ -147,17 +147,20 @@ public class Enemy : MonoBehaviour
 
         // Get movement direction from waypoint follower
         Vector2 moveDirection = Vector2.zero;
+        bool isMoving = false;
+        
         if (waypointFollower != null && waypointFollower.IsMoving())
         {
             moveDirection = waypointFollower.GetMovementDirection();
+            isMoving = moveDirection != Vector2.zero;
         }
 
-        // Set animator parameters (assumes you have these parameters)
-        animator.SetFloat("MoveX", moveDirection.x);
-        animator.SetFloat("MoveY", moveDirection.y);
-        animator.SetBool("IsMoving", moveDirection != Vector2.zero);
+        // Set animator parameter for movement
+        animator.SetBool("IsMoving", isMoving);
 
-        // Flip sprite based on direction
+        // Flip sprite based on horizontal direction
+        // Moving left: flip sprite to face left
+        // Moving right: don't flip (default rightward animation)
         if (spriteRenderer != null && moveDirection.x != 0)
         {
             spriteRenderer.flipX = moveDirection.x < 0;

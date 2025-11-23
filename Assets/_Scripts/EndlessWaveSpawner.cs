@@ -37,6 +37,9 @@ public class EndlessWaveSpawner : MonoBehaviour
     [SerializeField] private int maxEarlyWaveBonus = 30;
     [SerializeField] private float autoWaveDelay = 10f;
 
+    [Header("UI References")]
+    [SerializeField] private UnityEngine.UI.Button callWaveButton;
+
     private int currentWave = 0;
     private bool isSpawning = false;
     private bool canCallWave = true;
@@ -53,6 +56,25 @@ public class EndlessWaveSpawner : MonoBehaviour
         if (waypoints == null || waypoints.Length == 0)
         {
             Debug.LogError("EndlessWaveSpawner: No waypoints assigned!");
+        }
+
+        // Setup call wave button
+        if (callWaveButton != null)
+        {
+            callWaveButton.onClick.AddListener(() => CallNextWave(true));
+        }
+        else
+        {
+            Debug.LogWarning("EndlessWaveSpawner: Call Wave Button not assigned! Assign it in the inspector to manually call waves.");
+        }
+    }
+
+    void OnDestroy()
+    {
+        // Clean up button listener
+        if (callWaveButton != null)
+        {
+            callWaveButton.onClick.RemoveListener(() => CallNextWave(true));
         }
     }
 
