@@ -10,6 +10,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float maxHealth = 100f;
     private float currentHealth;
 
+    [Header("Health Bar")]
+    [SerializeField] private UnityEngine.UI.Slider healthBarSlider;
+
     [Header("Combat (Confusion)")]
     [SerializeField] private float confusionDamage = 10f;
     [SerializeField] private float confusionAttackRange = 1.5f;
@@ -36,6 +39,9 @@ public class Enemy : MonoBehaviour
         waypointFollower = GetComponent<WaypointFollower>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        // Initialize health bar
+        UpdateHealthBar();
     }
 
     void Update()
@@ -72,6 +78,9 @@ public class Enemy : MonoBehaviour
         FloatingText.Create(transform.position + Vector3.up * 0.5f, 
             Mathf.RoundToInt(damage).ToString(), 
             Color.red);
+
+        // Update health bar
+        UpdateHealthBar();
 
         if (currentHealth <= 0f)
         {
@@ -180,11 +189,20 @@ public class Enemy : MonoBehaviour
     {
         maxHealth = health;
         currentHealth = maxHealth;
+        UpdateHealthBar();
     }
 
     public float GetHealthPercentage()
     {
         return currentHealth / maxHealth;
+    }
+
+    private void UpdateHealthBar()
+    {
+        if (healthBarSlider != null)
+        {
+            healthBarSlider.value = GetHealthPercentage();
+        }
     }
 
     #endregion

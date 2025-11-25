@@ -163,19 +163,41 @@ public class GameManager : MonoBehaviour
 
     #endregion
 
+    #region Time Management
+    public void PauseGame()
+    {
+        AudioManager.Instance.PlaySound(SoundType.ButtonClick);
+        Time.timeScale = 0f;
+    }
+
+    public void ContinueGame()
+    {
+        AudioManager.Instance.PlaySound(SoundType.ButtonClick);
+        Time.timeScale = 1f;
+    }
+
+    #endregion
+
     #region Scene Management
 
     public void RestartGame()
     {
+        AudioManager.Instance.PlaySound(SoundType.ButtonClick);
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void LoadMainMenu()
     {
+        AudioManager.Instance.PlaySound(SoundType.ButtonClick);
         Time.timeScale = 1f;
         SceneManager.LoadScene(0); // Assumes main menu is scene 0
     }
 
     #endregion
+
+    public void PlayButtonClickSound()
+    {
+        AudioManager.Instance.PlaySound(SoundType.ButtonClick);
+    }
 }

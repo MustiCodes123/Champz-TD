@@ -49,6 +49,14 @@ public class TowerPlacement : MonoBehaviour
     private bool isPanelOpen = false;
     private Camera mainCamera;
 
+    // Cost text references
+    private TMPro.TextMeshProUGUI hunterCostText;
+    private TMPro.TextMeshProUGUI jesterCostText;
+    private TMPro.TextMeshProUGUI lumberjackCostText;
+    private TMPro.TextMeshProUGUI priestCostText;
+    private TMPro.TextMeshProUGUI alchemistCostText;
+    private TMPro.TextMeshProUGUI warriorCostText;
+
     void Start()
     {
         mainCamera = Camera.main;
@@ -57,8 +65,40 @@ public class TowerPlacement : MonoBehaviour
         if (panelParent != null)
             panelParent.SetActive(false);
 
+        // Initialize cost text references
+        InitializeCostTexts();
+
+        // Set initial cost text values and colors
+        UpdateCostTextColors();
+
         // Setup button listeners
         SetupButtons();
+    }
+
+    private void InitializeCostTexts()
+    {
+        // Find Text_Value child in each button and cache the reference
+        hunterCostText = GetCostTextFromButton(hunterButton);
+        jesterCostText = GetCostTextFromButton(jesterButton);
+        lumberjackCostText = GetCostTextFromButton(lumberjackButton);
+        priestCostText = GetCostTextFromButton(priestButton);
+        alchemistCostText = GetCostTextFromButton(alchemistButton);
+        warriorCostText = GetCostTextFromButton(warriorButton);
+    }
+
+    private TMPro.TextMeshProUGUI GetCostTextFromButton(Button button)
+    {
+        if (button == null) return null;
+
+        // Find child named "Text_Value"
+        Transform textChild = button.transform.Find("Text_Value");
+        if (textChild != null)
+        {
+            return textChild.GetComponent<TMPro.TextMeshProUGUI>();
+        }
+
+        Debug.LogWarning($"TowerPlacement: Text_Value child not found on button {button.name}");
+        return null;
     }
 
     void Update()
@@ -90,6 +130,7 @@ public class TowerPlacement : MonoBehaviour
             if (buildSite != null && !buildSite.IsOccupied())
             {
                 currentBuildSite = buildSite;
+                AudioManager.Instance.PlaySound(SoundType.ButtonClick);
                 OpenPanel();
             }
         }
@@ -176,11 +217,16 @@ public class TowerPlacement : MonoBehaviour
             warriorButton.onClick.AddListener(() => PlaceTower(warriorTowerPrefab, warriorCost));
         
         if (cancelButton != null)
-            cancelButton.onClick.AddListener(ClosePanel);
+            cancelButton.onClick.AddListener(() => {
+                AudioManager.Instance.PlaySound(SoundType.ButtonClick);
+                ClosePanel();
+            });
     }
 
     private void PlaceTower(GameObject towerPrefab, int cost)
     {
+        AudioManager.Instance.PlaySound(SoundType.ButtonClick);
+
         if (currentBuildSite == null || towerPrefab == null) return;
 
         // Check if player can afford
@@ -199,6 +245,9 @@ public class TowerPlacement : MonoBehaviour
         {
             GameManager.Instance.SpendGold(cost);
         }
+
+        // Play tower place sound
+        AudioManager.Instance.PlaySound(SoundType.TowerPlace);
 
         // Mark build site as occupied
         currentBuildSite.PlaceTower(tower);
@@ -240,6 +289,41 @@ public class TowerPlacement : MonoBehaviour
         if (currentGoldText != null && GameManager.Instance != null)
         {
             currentGoldText.text = $"Gold: {GameManager.Instance.GetCurrentGold()}";
+        }
+
+        // Update cost text colors
+        UpdateCostTextColors();
+    }
+
+    private void UpdateCostTextColors()
+    {
+        if (GameManager.Instance == null) return;
+
+        int currentGold = GameManager.Instance.GetCurrentGold();
+
+        // Update each cost text color based on affordability
+        UpdateCostTextColor(hunterCostText, hunterCost, currentGold);
+        UpdateCostTextColor(jesterCostText, jesterCost, currentGold);
+        UpdateCostTextColor(lumberjackCostText, lumberjackCost, currentGold);
+        UpdateCostTextColor(priestCostText, priestCost, currentGold);
+        UpdateCostTextColor(alchemistCostText, alchemistCost, currentGold);
+        UpdateCostTextColor(warriorCostText, warriorCost, currentGold);
+    }
+
+    private void UpdateCostTextColor(TMPro.TextMeshProUGUI costText, int cost, int currentGold)
+    {
+        if (costText == null) return;
+
+        costText.text = cost.ToString();
+
+        // Set color based on affordability
+        if (currentGold >= cost)
+        {
+            costText.color = Color.white; // Or green if you prefer
+        }
+        else
+        {
+            costText.color = Color.red;
         }
     }
 

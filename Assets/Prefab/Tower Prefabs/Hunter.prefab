@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8695226406571651893}
   - component: {fileID: 8911406441042087036}
   m_Layer: 0
-  m_Name: JesterTower
+  m_Name: Hunter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Tower
   firePoint: {fileID: 1505002031134227283}
   projectilePrefab: {fileID: 7193248989153210057, guid: d9cfb33d2dfa9d54daf92b3dd5e5a016, type: 3}
-  animator: {fileID: 0}
+  animator: {fileID: 8911406441042087036}
   spriteRenderer: {fileID: 8067186373694205960}
   healingAuraRange: 3
   healingInterval: 2
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69bd0a21a2730ed4f9150576518e3464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TowerData
-  towerType: 1
+  towerType: 0
   currentLevel: 1
   maxLevel: 5
   baseRange: 3

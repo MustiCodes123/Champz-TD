@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 
 /// <summary>
 /// Endless Wave Spawner - Spawns enemies in groups with scaling difficulty
@@ -40,6 +41,17 @@ public class EndlessWaveSpawner : MonoBehaviour
     [Header("UI References")]
     [SerializeField] private UnityEngine.UI.Button callWaveButton;
 
+    [Header("Button Animation")]
+    [SerializeField] private GameObject buttonParent;
+    [Tooltip("Scale factor for button click animation")]
+    [SerializeField] private float buttonClickScale = 1.2f;
+    [Tooltip("Duration of button click animation")]
+    [SerializeField] private float buttonClickDuration = 0.2f;
+    [Tooltip("Scale factor for idle pulsing animation")]
+    [SerializeField] private float buttonIdleScale = 1.1f;
+    [Tooltip("Duration of idle pulsing animation")]
+    [SerializeField] private float buttonIdleDuration = 1.5f;
+
     private int currentWave = 0;
     private bool isSpawning = false;
     private bool canCallWave = true;
@@ -62,6 +74,9 @@ public class EndlessWaveSpawner : MonoBehaviour
         if (callWaveButton != null)
         {
             callWaveButton.onClick.AddListener(() => CallNextWave(true));
+            
+            // Start idle pulsing animation
+            StartButtonIdleAnimation();
         }
         else
         {
@@ -75,6 +90,27 @@ public class EndlessWaveSpawner : MonoBehaviour
         if (callWaveButton != null)
         {
             callWaveButton.onClick.RemoveListener(() => CallNextWave(true));
+        }
+    }
+
+    private void StartButtonIdleAnimation()
+    {
+        if (callWaveButton != null)
+        {
+            // Create continuous pulsing animation
+            callWaveButton.transform.DOScale(buttonIdleScale, buttonIdleDuration / 2f)
+                .SetEase(Ease.InOutSine)
+                .SetLoops(-1, LoopType.Yoyo); // Infinite loop with yoyo effect
+        }
+    }
+
+    private void StopButtonIdleAnimation()
+    {
+        if (callWaveButton != null)
+        {
+            // Kill the animation and reset scale
+            callWaveButton.transform.DOKill();
+            callWaveButton.transform.localScale = Vector3.one;
         }
     }
 
@@ -95,6 +131,28 @@ public class EndlessWaveSpawner : MonoBehaviour
     public void CallNextWave(bool manualCall = true)
     {
         if (!canCallWave || isSpawning) return;
+
+        AudioManager.Instance.PlaySound(SoundType.ButtonClick);
+        AudioManager.Instance.PlaySound(SoundType.IncomingWaveAlert);
+        // Stop idle animation and animate button click
+        StopButtonIdleAnimation();
+        
+        if (callWaveButton != null)
+        {
+            callWaveButton.transform.DOScale(buttonClickScale, buttonClickDuration / 2f)
+                .SetEase(Ease.OutQuad)
+                .OnComplete(() => 
+                {
+                    callWaveButton.transform.DOScale(1f, buttonClickDuration / 2f)
+                        .SetEase(Ease.OutQuad);
+                });
+        }
+
+        // Deactivate parent
+        if (buttonParent != null)
+        {
+            buttonParent.SetActive(false);
+        }
 
         // Early wave bonus
         if (manualCall && isAutoWaveActive && enableEarlyWaveBonus)

@@ -30,6 +30,7 @@ public class Tower : MonoBehaviour
     // Targeting
     private Transform currentTarget;
     private float fireCountdown = 0f;
+    private string lastAttackTrigger = "";
 
     // Animation parameters
     private const string ANIM_ATTACK_LEFT = "AttackLeft";
@@ -42,9 +43,31 @@ public class Tower : MonoBehaviour
         towerData = GetComponent<TowerData>();
         if (towerData == null)
         {
-            Debug.LogError("Tower: Missing TowerData component!");
+            Debug.LogError($"Tower ({gameObject.name}): Missing TowerData component!");
             enabled = false;
             return;
+        }
+
+        // Validate animator setup
+        if (animator == null)
+        {
+            Debug.LogWarning($"Tower ({gameObject.name}): Animator reference not assigned in inspector!");
+            animator = GetComponent<Animator>();
+            if (animator == null)
+            {
+                Debug.LogError($"Tower ({gameObject.name}): No Animator component found!");
+            }
+        }
+
+        if (animator != null && animator.runtimeAnimatorController == null)
+        {
+            Debug.LogError($"Tower ({gameObject.name}): Animator Controller not assigned to Animator component!");
+        }
+
+        if (spriteRenderer == null)
+        {
+            Debug.LogWarning($"Tower ({gameObject.name}): SpriteRenderer reference not assigned in inspector!");
+            spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
         ApplyStats();
@@ -116,6 +139,9 @@ public class Tower : MonoBehaviour
         if (projectilePrefab == null || firePoint == null || currentTarget == null)
             return;
 
+        // Play attack sound
+        AudioManager.Instance.PlaySound(GetAttackSoundType(towerData.towerType));
+
         // Spawn projectile
         GameObject projectileObj = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
         
@@ -126,9 +152,25 @@ public class Tower : MonoBehaviour
         }
     }
 
+    private SoundType GetAttackSoundType(TowerType towerType)
+    {
+        return towerType switch
+        {
+            TowerType.Hunter => SoundType.TowerAttack_Hunter,
+            TowerType.Jester => SoundType.TowerAttack_Jester,
+            TowerType.Lumberjack => SoundType.TowerAttack_Lumberjack,
+            TowerType.Priest => SoundType.TowerAttack_Priest,
+            TowerType.Alchemist => SoundType.TowerAttack_Alchemist,
+            TowerType.Warrior => SoundType.TowerAttack_Warrior,
+            _ => SoundType.TowerAttack_Hunter // Default fallback
+        };
+    }
+
     private void UpdateAnimations(bool hasTarget)
     {
         if (animator == null) return;
+
+        Debug.Log($"[{gameObject.name}] UpdateAnimations - hasTarget: {hasTarget}, currentTarget: {(currentTarget != null ? currentTarget.name : "null")}, currentState: {animator.GetCurrentAnimatorStateInfo(0).IsName("Idle")}");
 
         if (hasTarget && currentTarget != null)
         {
@@ -138,38 +180,75 @@ public class Tower : MonoBehaviour
             // Determine which direction animation to play based on angle
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             
-            // Reset all triggers
-            animator.ResetTrigger(ANIM_ATTACK_LEFT);
-            animator.ResetTrigger(ANIM_ATTACK_RIGHT);
-            animator.ResetTrigger(ANIM_ATTACK_UP);
-            animator.ResetTrigger(ANIM_ATTACK_DOWN);
+            // Determine which attack trigger to use based on angle
+            string attackTrigger = "";
             
-            // Set appropriate attack trigger based on angle
-            // Right: -45 to 45 degrees
-            // Up: 45 to 135 degrees
-            // Left: 135 to -135 degrees (or 135 to 225)
-            // Down: -135 to -45 degrees (or 225 to 315)
-            
-            if (angle >= -45f && angle < 45f)
+            // Improved angle ranges for better directional detection
+            if (angle >= -30f && angle < 30f)
             {
-                animator.SetTrigger(ANIM_ATTACK_RIGHT);
+                attackTrigger = ANIM_ATTACK_RIGHT;
             }
-            else if (angle >= 45f && angle < 135f)
+            else if (angle >= 30f && angle < 150f)
             {
-                animator.SetTrigger(ANIM_ATTACK_UP);
+                attackTrigger = ANIM_ATTACK_UP;
             }
-            else if (angle >= 135f || angle < -135f)
+            else if (angle >= 150f || angle < -150f)
             {
-                animator.SetTrigger(ANIM_ATTACK_LEFT);
+                attackTrigger = ANIM_ATTACK_LEFT;
             }
-            else // angle >= -135f && angle < -45f
+            else // angle >= -150f && angle < -30f
             {
-                animator.SetTrigger(ANIM_ATTACK_DOWN);
+                attackTrigger = ANIM_ATTACK_DOWN;
+            }
+
+            Debug.Log($"[{gameObject.name}] Angle: {angle:F1}°, Selected Trigger: {attackTrigger}, Last Trigger: {lastAttackTrigger}");
+
+            // Determine which animation state to play based on the trigger
+            string stateName = "";
+            if (attackTrigger == ANIM_ATTACK_LEFT) stateName = "AttackLeft";
+            else if (attackTrigger == ANIM_ATTACK_RIGHT) stateName = "AttackRight";
+            else if (attackTrigger == ANIM_ATTACK_UP) stateName = "AttackUp";
+            else if (attackTrigger == ANIM_ATTACK_DOWN) stateName = "AttackDown";
+
+            // Play or continue playing the attack animation
+            if (attackTrigger != lastAttackTrigger)
+            {
+                // Direction changed - play new attack animation
+                animator.Play(stateName, 0, 0f);
+                lastAttackTrigger = attackTrigger;
+                Debug.Log($"[{gameObject.name}] <color=green>Playing: {stateName}</color>");
+            }
+            else
+            {
+                // Same direction - ensure we're still in the attack state (in case animation finished)
+                AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+                if (!stateInfo.IsName(stateName))
+                {
+                    animator.Play(stateName, 0, 0f);
+                    Debug.Log($"[{gameObject.name}] <color=cyan>Re-entering: {stateName}</color>");
+                }
             }
         }
         else
         {
-            // Idle state - animator will return to idle automatically
+            // No target - force return to idle
+            AnimatorStateInfo currentState = animator.GetCurrentAnimatorStateInfo(0);
+            
+            // If we're not already in Idle state, force transition to Idle
+            if (!currentState.IsName("Idle"))
+            {
+                Debug.Log($"[{gameObject.name}] <color=yellow>No target - forcing return to Idle from {currentState.shortNameHash}</color>");
+                
+                // Force animator to play Idle state immediately
+                animator.Play("Idle", 0, 0f);
+            }
+            
+            // Clear last trigger when not attacking
+            if (!string.IsNullOrEmpty(lastAttackTrigger))
+            {
+                lastAttackTrigger = "";
+                Debug.Log($"[{gameObject.name}] <color=yellow>Cleared last attack trigger</color>");
+            }
         }
     }
 
