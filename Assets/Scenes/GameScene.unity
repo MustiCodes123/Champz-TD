@@ -32262,6 +32262,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EndlessWaveSpawner
   enemyPrefabs:
   - {fileID: 2022236103807827788, guid: 93ac1719511f20f4abaf30bb784f9a54, type: 3}
+  - {fileID: 1149349217611881196, guid: b2b21c0316321044f877136065d7586b, type: 3}
+  - {fileID: 707358631643074561, guid: c3acb85cc0980ec4f84dc553d64f639e, type: 3}
+  - {fileID: 7709272798166705810, guid: b3c176ebff3ccd2478989ca741b94f16, type: 3}
+  - {fileID: 8673645312518454457, guid: 97d081168d0008446b240ae8fb8e32d1, type: 3}
+  - {fileID: 5044600986008753543, guid: fa82cb17a30385543b28cee9412c94a9, type: 3}
+  - {fileID: 2630619244222822049, guid: c7567bfdfb9f6d24e98c48a04f594df9, type: 3}
+  - {fileID: 4819607895901313373, guid: 764c62f317b227d4d83dc3cbdceef5fe, type: 3}
+  - {fileID: 991223477587110688, guid: c6d1f5caa3ab9554c98cae1876c04979, type: 3}
+  - {fileID: 9165864613641985780, guid: c08b069598bf7104087e7d52b9b94b6b, type: 3}
   groupsPerWave: 4
   enemiesPerGroup: {x: 8, y: 12}
   waypoints:
@@ -48620,67 +48629,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.955
---- !u!1001 &1980576787
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2022236103807827788, guid: b2b21c0316321044f877136065d7586b, type: 3}
-      propertyPath: m_Name
-      value: Enemy Prefab 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3888592926011619487, guid: b2b21c0316321044f877136065d7586b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 3888592926011619487, guid: b2b21c0316321044f877136065d7586b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.57
-      objectReference: {fileID: 0}
-    - target: {fileID: 3888592926011619487, guid: b2b21c0316321044f877136065d7586b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3888592926011619487, guid: b2b21c0316321044f877136065d7586b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3888592926011619487, guid: b2b21c0316321044f877136065d7586b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3888592926011619487, guid: b2b21c0316321044f877136065d7586b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3888592926011619487, guid: b2b21c0316321044f877136065d7586b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3888592926011619487, guid: b2b21c0316321044f877136065d7586b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3888592926011619487, guid: b2b21c0316321044f877136065d7586b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3888592926011619487, guid: b2b21c0316321044f877136065d7586b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4639796403556994144, guid: b2b21c0316321044f877136065d7586b, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1350953757862622565, guid: 2874c40943fce494685e97efb6755a57, type: 3}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b2b21c0316321044f877136065d7586b, type: 3}
 --- !u!1 &1988369822
 GameObject:
   m_ObjectHideFlags: 0
@@ -118638,4 +118586,3 @@ SceneRoots:
   - {fileID: 1049922073}
   - {fileID: 159890274}
   - {fileID: 1502089243742967789}
-  - {fileID: 1980576787}
