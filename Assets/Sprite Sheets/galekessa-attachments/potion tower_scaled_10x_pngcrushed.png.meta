@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: c29684b1463211a48b10e3006e81d41d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1950577717534014447
+    second: potion tower_scaled_10x_pngcrushed_0
+  - first:
+      213: -4680887363590895977
+    second: potion tower_scaled_10x_pngcrushed_1
+  - first:
+      213: -5100844752717120275
+    second: potion tower_scaled_10x_pngcrushed_2
+  - first:
+      213: 5645237359758836875
+    second: potion tower_scaled_10x_pngcrushed_3
+  - first:
+      213: -6967487005794328759
+    second: potion tower_scaled_10x_pngcrushed_4
+  - first:
+      213: -2246883775335443907
+    second: potion tower_scaled_10x_pngcrushed_5
+  - first:
+      213: -3519967900343915501
+    second: potion tower_scaled_10x_pngcrushed_6
+  - first:
+      213: 7226983573801368684
+    second: potion tower_scaled_10x_pngcrushed_7
+  - first:
+      213: 4455170584182216807
+    second: potion tower_scaled_10x_pngcrushed_8
+  - first:
+      213: -6393242776517298944
+    second: potion tower_scaled_10x_pngcrushed_9
+  - first:
+      213: -1193720206663661668
+    second: potion tower_scaled_10x_pngcrushed_10
+  - first:
+      213: 7661992485624242640
+    second: potion tower_scaled_10x_pngcrushed_11
+  - first:
+      213: -5733804897642305726
+    second: potion tower_scaled_10x_pngcrushed_12
+  - first:
+      213: 755520168323321221
+    second: potion tower_scaled_10x_pngcrushed_13
+  - first:
+      213: -3839942537158700631
+    second: potion tower_scaled_10x_pngcrushed_14
+  - first:
+      213: 8974895016197688399
+    second: potion tower_scaled_10x_pngcrushed_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: potion tower_scaled_10x_pngcrushed_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 969
+        width: 262
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114c79786e72ee4e0800000000000000
+      internalID: -1950577717534014447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: potion tower_scaled_10x_pngcrushed_1
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 979
+        width: 262
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 796cc834eb52a0fb0800000000000000
+      internalID: -4680887363590895977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: potion tower_scaled_10x_pngcrushed_2
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 969
+        width: 262
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec71eb09b82639b0800000000000000
+      internalID: -5100844752717120275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: potion tower_scaled_10x_pngcrushed_3
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 969
+        width: 262
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84803d0879e75e40800000000000000
+      internalID: 5645237359758836875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: potion tower_scaled_10x_pngcrushed_4
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 649
+        width: 262
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94f9a7acb738e4f90800000000000000
+      internalID: -6967487005794328759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: potion tower_scaled_10x_pngcrushed_5
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 639
+        width: 262
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d32da8f5c1771d0e0800000000000000
+      internalID: -2246883775335443907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: potion tower_scaled_10x_pngcrushed_6
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 649
+        width: 262
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c293f18df862fc0800000000000000
+      internalID: -3519967900343915501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: potion tower_scaled_10x_pngcrushed_7
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 649
+        width: 262
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6c730a25476b4460800000000000000
+      internalID: 7226983573801368684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: potion tower_scaled_10x_pngcrushed_8
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 329
+        width: 262
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76853f3ba02f3dd30800000000000000
+      internalID: 4455170584182216807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: potion tower_scaled_10x_pngcrushed_9
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 329
+        width: 262
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 005bade4193a647a0800000000000000
+      internalID: -6393242776517298944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: potion tower_scaled_10x_pngcrushed_10
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 329
+        width: 272
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c974b90fbcd0f6fe0800000000000000
+      internalID: -1193720206663661668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: potion tower_scaled_10x_pngcrushed_11
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 329
+        width: 262
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d16859129dd45a60800000000000000
+      internalID: 7661992485624242640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: potion tower_scaled_10x_pngcrushed_12
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 9
+        width: 262
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 247a2a813de6d60b0800000000000000
+      internalID: -5733804897642305726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: potion tower_scaled_10x_pngcrushed_13
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 9
+        width: 262
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d0e8517952c7a00800000000000000
+      internalID: 755520168323321221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: potion tower_scaled_10x_pngcrushed_14
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 9
+        width: 272
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a15eba7b98c5bac0800000000000000
+      internalID: -3839942537158700631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: potion tower_scaled_10x_pngcrushed_15
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 9
+        width: 262
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c03e8577b3d8c70800000000000000
+      internalID: 8974895016197688399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      potion tower_scaled_10x_pngcrushed_0: -1950577717534014447
+      potion tower_scaled_10x_pngcrushed_1: -4680887363590895977
+      potion tower_scaled_10x_pngcrushed_10: -1193720206663661668
+      potion tower_scaled_10x_pngcrushed_11: 7661992485624242640
+      potion tower_scaled_10x_pngcrushed_12: -5733804897642305726
+      potion tower_scaled_10x_pngcrushed_13: 755520168323321221
+      potion tower_scaled_10x_pngcrushed_14: -3839942537158700631
+      potion tower_scaled_10x_pngcrushed_15: 8974895016197688399
+      potion tower_scaled_10x_pngcrushed_2: -5100844752717120275
+      potion tower_scaled_10x_pngcrushed_3: 5645237359758836875
+      potion tower_scaled_10x_pngcrushed_4: -6967487005794328759
+      potion tower_scaled_10x_pngcrushed_5: -2246883775335443907
+      potion tower_scaled_10x_pngcrushed_6: -3519967900343915501
+      potion tower_scaled_10x_pngcrushed_7: 7226983573801368684
+      potion tower_scaled_10x_pngcrushed_8: 4455170584182216807
+      potion tower_scaled_10x_pngcrushed_9: -6393242776517298944
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 5c30618f30605da43a3376de825e0dd7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2985300016434982700
+    second: axe tower_scaled_10x_pngcrushed_0
+  - first:
+      213: -6237935383431411410
+    second: axe tower_scaled_10x_pngcrushed_1
+  - first:
+      213: 6842017065973352511
+    second: axe tower_scaled_10x_pngcrushed_2
+  - first:
+      213: -2206322390546123408
+    second: axe tower_scaled_10x_pngcrushed_3
+  - first:
+      213: 8580518978402822123
+    second: axe tower_scaled_10x_pngcrushed_4
+  - first:
+      213: 7620749459798540898
+    second: axe tower_scaled_10x_pngcrushed_5
+  - first:
+      213: -3595602724592766746
+    second: axe tower_scaled_10x_pngcrushed_6
+  - first:
+      213: -6605558049325855778
+    second: axe tower_scaled_10x_pngcrushed_7
+  - first:
+      213: 219479408489962443
+    second: axe tower_scaled_10x_pngcrushed_8
+  - first:
+      213: -3108331502197397912
+    second: axe tower_scaled_10x_pngcrushed_9
+  - first:
+      213: 6031101434945742401
+    second: axe tower_scaled_10x_pngcrushed_10
+  - first:
+      213: -6107823092205092324
+    second: axe tower_scaled_10x_pngcrushed_11
+  - first:
+      213: -1039936789648537902
+    second: axe tower_scaled_10x_pngcrushed_12
+  - first:
+      213: -7734594353177814130
+    second: axe tower_scaled_10x_pngcrushed_13
+  - first:
+      213: -4614071042160930301
+    second: axe tower_scaled_10x_pngcrushed_14
+  - first:
+      213: -2028662179354554165
+    second: axe tower_scaled_10x_pngcrushed_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: axe tower_scaled_10x_pngcrushed_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 969
+        width: 321
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d0dc6ca3751296d0800000000000000
+      internalID: -2985300016434982700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: axe tower_scaled_10x_pngcrushed_1
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 979
+        width: 322
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e290bba91d66e69a0800000000000000
+      internalID: -6237935383431411410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: axe tower_scaled_10x_pngcrushed_2
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 959
+        width: 282
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f38808c554ab3fe50800000000000000
+      internalID: 6842017065973352511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: axe tower_scaled_10x_pngcrushed_3
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 959
+        width: 282
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 075f183b9719161e0800000000000000
+      internalID: -2206322390546123408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: axe tower_scaled_10x_pngcrushed_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 649
+        width: 321
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be7a230ac80241770800000000000000
+      internalID: 8580518978402822123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: axe tower_scaled_10x_pngcrushed_5
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 639
+        width: 302
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 262ca89d14752c960800000000000000
+      internalID: 7620749459798540898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: axe tower_scaled_10x_pngcrushed_6
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 649
+        width: 302
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e0b83f4f5ad91ec0800000000000000
+      internalID: -3595602724592766746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: axe tower_scaled_10x_pngcrushed_7
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 649
+        width: 292
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edbc5bea3f75454a0800000000000000
+      internalID: -6605558049325855778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: axe tower_scaled_10x_pngcrushed_8
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 329
+        width: 272
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb9e82fb5fbb0300800000000000000
+      internalID: 219479408489962443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: axe tower_scaled_10x_pngcrushed_9
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 329
+        width: 282
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8662e57a7fcfcd4d0800000000000000
+      internalID: -3108331502197397912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: axe tower_scaled_10x_pngcrushed_10
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 329
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1462a4a0dc6c2b350800000000000000
+      internalID: 6031101434945742401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: axe tower_scaled_10x_pngcrushed_11
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 329
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c12003e1247ac3ba0800000000000000
+      internalID: -6107823092205092324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: axe tower_scaled_10x_pngcrushed_12
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 9
+        width: 272
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d68328eff66191f0800000000000000
+      internalID: -1039936789648537902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: axe tower_scaled_10x_pngcrushed_13
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 9
+        width: 282
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8b18195a6339a490800000000000000
+      internalID: -7734594353177814130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: axe tower_scaled_10x_pngcrushed_14
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 9
+        width: 292
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 302d49365d687ffb0800000000000000
+      internalID: -4614071042160930301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: axe tower_scaled_10x_pngcrushed_15
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 9
+        width: 291
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc05d460f7eb8d3e0800000000000000
+      internalID: -2028662179354554165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      axe tower_scaled_10x_pngcrushed_0: -2985300016434982700
+      axe tower_scaled_10x_pngcrushed_1: -6237935383431411410
+      axe tower_scaled_10x_pngcrushed_10: 6031101434945742401
+      axe tower_scaled_10x_pngcrushed_11: -6107823092205092324
+      axe tower_scaled_10x_pngcrushed_12: -1039936789648537902
+      axe tower_scaled_10x_pngcrushed_13: -7734594353177814130
+      axe tower_scaled_10x_pngcrushed_14: -4614071042160930301
+      axe tower_scaled_10x_pngcrushed_15: -2028662179354554165
+      axe tower_scaled_10x_pngcrushed_2: 6842017065973352511
+      axe tower_scaled_10x_pngcrushed_3: -2206322390546123408
+      axe tower_scaled_10x_pngcrushed_4: 8580518978402822123
+      axe tower_scaled_10x_pngcrushed_5: 7620749459798540898
+      axe tower_scaled_10x_pngcrushed_6: -3595602724592766746
+      axe tower_scaled_10x_pngcrushed_7: -6605558049325855778
+      axe tower_scaled_10x_pngcrushed_8: 219479408489962443
+      axe tower_scaled_10x_pngcrushed_9: -3108331502197397912
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

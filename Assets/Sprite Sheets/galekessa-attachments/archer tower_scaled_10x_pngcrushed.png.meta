@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 6641d87bb483d784f8712685a202ed5e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3776143057212228081
+    second: archer tower_scaled_10x_pngcrushed_0
+  - first:
+      213: -3229887431015333168
+    second: archer tower_scaled_10x_pngcrushed_1
+  - first:
+      213: 5910175110445755049
+    second: archer tower_scaled_10x_pngcrushed_2
+  - first:
+      213: 7832066828978870645
+    second: archer tower_scaled_10x_pngcrushed_3
+  - first:
+      213: 1808412339913150616
+    second: archer tower_scaled_10x_pngcrushed_4
+  - first:
+      213: -9021616831946912406
+    second: archer tower_scaled_10x_pngcrushed_5
+  - first:
+      213: -7314015403891569655
+    second: archer tower_scaled_10x_pngcrushed_6
+  - first:
+      213: 6712680247623429704
+    second: archer tower_scaled_10x_pngcrushed_7
+  - first:
+      213: 2335301175340260498
+    second: archer tower_scaled_10x_pngcrushed_8
+  - first:
+      213: -1889362378498524839
+    second: archer tower_scaled_10x_pngcrushed_9
+  - first:
+      213: -6726442579988567412
+    second: archer tower_scaled_10x_pngcrushed_10
+  - first:
+      213: 7618343253367753123
+    second: archer tower_scaled_10x_pngcrushed_11
+  - first:
+      213: -1637129169651195156
+    second: archer tower_scaled_10x_pngcrushed_12
+  - first:
+      213: 6027336399474816788
+    second: archer tower_scaled_10x_pngcrushed_13
+  - first:
+      213: 3202347683590501658
+    second: archer tower_scaled_10x_pngcrushed_14
+  - first:
+      213: 7807154455021895047
+    second: archer tower_scaled_10x_pngcrushed_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: archer tower_scaled_10x_pngcrushed_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 969
+        width: 262
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ebec575e1789bc0800000000000000
+      internalID: -3776143057212228081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer tower_scaled_10x_pngcrushed_1
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 969
+        width: 262
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d205d18e722d23d0800000000000000
+      internalID: -3229887431015333168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer tower_scaled_10x_pngcrushed_2
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 969
+        width: 262
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aa697213f8250250800000000000000
+      internalID: 5910175110445755049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer tower_scaled_10x_pngcrushed_3
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 969
+        width: 262
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 579d76ee84711bc60800000000000000
+      internalID: 7832066828978870645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer tower_scaled_10x_pngcrushed_4
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 649
+        width: 262
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 890d4f71175c81910800000000000000
+      internalID: 1808412339913150616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer tower_scaled_10x_pngcrushed_5
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 649
+        width: 262
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d8e183a47ccc280800000000000000
+      internalID: -9021616831946912406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer tower_scaled_10x_pngcrushed_6
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 649
+        width: 262
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90cce41ddb56f7a90800000000000000
+      internalID: -7314015403891569655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer tower_scaled_10x_pngcrushed_7
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 649
+        width: 262
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e2062be1b382d50800000000000000
+      internalID: 6712680247623429704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer tower_scaled_10x_pngcrushed_8
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 329
+        width: 272
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29c55b7cb08a86020800000000000000
+      internalID: 2335301175340260498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer tower_scaled_10x_pngcrushed_9
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 329
+        width: 272
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 959bb915de2a7c5e0800000000000000
+      internalID: -1889362378498524839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer tower_scaled_10x_pngcrushed_10
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 329
+        width: 272
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8a28b99c10e6a2a0800000000000000
+      internalID: -6726442579988567412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer tower_scaled_10x_pngcrushed_11
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 329
+        width: 272
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a98af143dac9b960800000000000000
+      internalID: 7618343253367753123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer tower_scaled_10x_pngcrushed_12
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 9
+        width: 272
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce2a28fa1bfb749e0800000000000000
+      internalID: -1637129169651195156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer tower_scaled_10x_pngcrushed_13
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 9
+        width: 272
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4177a78658665a350800000000000000
+      internalID: 6027336399474816788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer tower_scaled_10x_pngcrushed_14
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 9
+        width: 272
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a15f4bf5046017c20800000000000000
+      internalID: 3202347683590501658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer tower_scaled_10x_pngcrushed_15
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 9
+        width: 272
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d303edc95985c60800000000000000
+      internalID: 7807154455021895047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      archer tower_scaled_10x_pngcrushed_0: -3776143057212228081
+      archer tower_scaled_10x_pngcrushed_1: -3229887431015333168
+      archer tower_scaled_10x_pngcrushed_10: -6726442579988567412
+      archer tower_scaled_10x_pngcrushed_11: 7618343253367753123
+      archer tower_scaled_10x_pngcrushed_12: -1637129169651195156
+      archer tower_scaled_10x_pngcrushed_13: 6027336399474816788
+      archer tower_scaled_10x_pngcrushed_14: 3202347683590501658
+      archer tower_scaled_10x_pngcrushed_15: 7807154455021895047
+      archer tower_scaled_10x_pngcrushed_2: 5910175110445755049
+      archer tower_scaled_10x_pngcrushed_3: 7832066828978870645
+      archer tower_scaled_10x_pngcrushed_4: 1808412339913150616
+      archer tower_scaled_10x_pngcrushed_5: -9021616831946912406
+      archer tower_scaled_10x_pngcrushed_6: -7314015403891569655
+      archer tower_scaled_10x_pngcrushed_7: 6712680247623429704
+      archer tower_scaled_10x_pngcrushed_8: 2335301175340260498
+      archer tower_scaled_10x_pngcrushed_9: -1889362378498524839
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
