@@ -5,6 +5,8 @@ using UnityEngine;
 /// </summary>
 public class BuildSite : MonoBehaviour
 {
+    [Header("Tower Placement")]
+    private float towerYOffset = 0.2f;
 
     private bool isOccupied = false;
     private GameObject placedTower;
@@ -22,6 +24,11 @@ public class BuildSite : MonoBehaviour
     {
         isOccupied = true;
         placedTower = tower;
+        
+        // Apply Y offset to tower position
+        Vector3 offsetPosition = transform.position;
+        offsetPosition.y += towerYOffset;
+        tower.transform.position = offsetPosition;
     }
 
     public GameObject GetPlacedTower() => placedTower;

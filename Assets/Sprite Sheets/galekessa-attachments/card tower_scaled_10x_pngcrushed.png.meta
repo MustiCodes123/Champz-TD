@@ -165,12 +165,12 @@ TextureImporter:
       name: card tower_scaled_10x_pngcrushed_0
       rect:
         serializedVersion: 2
-        x: 29
-        y: 969
-        width: 262
-        height: 311
+        x: 30
+        y: 970
+        width: 260
+        height: 310
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -187,12 +187,12 @@ TextureImporter:
       name: card tower_scaled_10x_pngcrushed_1
       rect:
         serializedVersion: 2
-        x: 349
-        y: 969
-        width: 262
-        height: 302
+        x: 350
+        y: 970
+        width: 260
+        height: 300
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -209,12 +209,12 @@ TextureImporter:
       name: card tower_scaled_10x_pngcrushed_2
       rect:
         serializedVersion: 2
-        x: 669
-        y: 649
-        width: 262
-        height: 612
+        x: 670
+        y: 971
+        width: 260
+        height: 289
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -231,12 +231,12 @@ TextureImporter:
       name: card tower_scaled_10x_pngcrushed_3
       rect:
         serializedVersion: 2
-        x: 989
-        y: 649
-        width: 262
-        height: 612
+        x: 990
+        y: 967
+        width: 260
+        height: 293
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -253,19 +253,19 @@ TextureImporter:
       name: card tower_scaled_10x_pngcrushed_4
       rect:
         serializedVersion: 2
-        x: 29
-        y: 649
-        width: 262
-        height: 312
+        x: 30
+        y: 650
+        width: 260
+        height: 310
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: da52e9243a230c220800000000000000
+      spriteID: 3f89e49b7b17d8144bb83b1b57fc5f1e
       internalID: 2504057069596714413
       vertices: []
       indices: 
@@ -275,19 +275,19 @@ TextureImporter:
       name: card tower_scaled_10x_pngcrushed_5
       rect:
         serializedVersion: 2
-        x: 349
-        y: 329
-        width: 262
-        height: 622
+        x: 350
+        y: 653
+        width: 260
+        height: 297
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b10ad7b86e8237c30800000000000000
+      spriteID: baf998ad79dc8c14a967a1487ae0a467
       internalID: 4355870235245256731
       vertices: []
       indices: 
@@ -297,19 +297,19 @@ TextureImporter:
       name: card tower_scaled_10x_pngcrushed_6
       rect:
         serializedVersion: 2
-        x: 29
-        y: 329
-        width: 262
-        height: 312
+        x: 30
+        y: 330
+        width: 260
+        height: 310
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 181d1a7d3b34953a0800000000000000
+      spriteID: 58ca1546c9a6bd14297e96271c743110
       internalID: -6676230532904136319
       vertices: []
       indices: 
@@ -319,19 +319,19 @@ TextureImporter:
       name: card tower_scaled_10x_pngcrushed_7
       rect:
         serializedVersion: 2
-        x: 659
-        y: 329
-        width: 262
-        height: 312
+        x: 660
+        y: 330
+        width: 260
+        height: 310
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 12753ec1a7e8353c0800000000000000
+      spriteID: b2d77d30dd47d874eafedfb15c0d7025
       internalID: -4371994158124804319
       vertices: []
       indices: 
@@ -341,19 +341,19 @@ TextureImporter:
       name: card tower_scaled_10x_pngcrushed_8
       rect:
         serializedVersion: 2
-        x: 979
-        y: 329
-        width: 262
-        height: 302
+        x: 980
+        y: 330
+        width: 260
+        height: 300
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f3a57a9ea818d5d90800000000000000
+      spriteID: 324e171f8592dc64cb1a457d47da5c5f
       internalID: -7107382203295245761
       vertices: []
       indices: 
@@ -363,19 +363,19 @@ TextureImporter:
       name: card tower_scaled_10x_pngcrushed_9
       rect:
         serializedVersion: 2
-        x: 29
-        y: 9
-        width: 262
-        height: 312
+        x: 30
+        y: 10
+        width: 260
+        height: 310
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1003a3b12b055a3a0800000000000000
+      spriteID: a446f482dbcf5a74498c8bc506b9a8d2
       internalID: -6654824148478840831
       vertices: []
       indices: 
@@ -385,19 +385,19 @@ TextureImporter:
       name: card tower_scaled_10x_pngcrushed_10
       rect:
         serializedVersion: 2
-        x: 349
-        y: 9
-        width: 252
-        height: 312
+        x: 350
+        y: 10
+        width: 250
+        height: 310
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1b09acb16e8749300800000000000000
+      spriteID: 6279b5c3f64e3fb45bccb36bc6294bfe
       internalID: 257964008371032241
       vertices: []
       indices: 
@@ -407,19 +407,19 @@ TextureImporter:
       name: card tower_scaled_10x_pngcrushed_11
       rect:
         serializedVersion: 2
-        x: 679
-        y: 9
-        width: 262
-        height: 312
+        x: 680
+        y: 10
+        width: 260
+        height: 310
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3179912b859eed770800000000000000
+      spriteID: d19e30d3ab9496b40b49b8fb0f0e8ac9
       internalID: 8637597702497605395
       vertices: []
       indices: 
@@ -429,20 +429,86 @@ TextureImporter:
       name: card tower_scaled_10x_pngcrushed_12
       rect:
         serializedVersion: 2
-        x: 999
-        y: 9
-        width: 262
-        height: 302
+        x: 1000
+        y: 10
+        width: 260
+        height: 300
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6e691b68f36a1d820800000000000000
+      spriteID: cb216e3e78ac29f45a18634907d9fe6a
       internalID: 2941314823422580454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card tower_scaled_10x_pngcrushed_13
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 672
+        width: 260
+        height: 309
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2849c133e159d846b32f49d4c358f2e
+      internalID: -835845126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card tower_scaled_10x_pngcrushed_14
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 650
+        width: 260
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb802f66e7b9dce4e8b5d9670b04d4aa
+      internalID: -265409970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card tower_scaled_10x_pngcrushed_15
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 330
+        width: 260
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d731ac23772946448ad6417063b52ae1
+      internalID: -23607728
       vertices: []
       indices: 
       edges: []
@@ -451,7 +517,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7ba884e44fae02542847d4e4a53119d5
     internalID: 0
     vertices: []
     indices: 
@@ -459,13 +525,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":256.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       card tower_scaled_10x_pngcrushed_0: -2210683311972192513
       card tower_scaled_10x_pngcrushed_1: -4212658185839622598
       card tower_scaled_10x_pngcrushed_10: 257964008371032241
       card tower_scaled_10x_pngcrushed_11: 8637597702497605395
       card tower_scaled_10x_pngcrushed_12: 2941314823422580454
+      card tower_scaled_10x_pngcrushed_13: -835845126
+      card tower_scaled_10x_pngcrushed_14: -265409970
+      card tower_scaled_10x_pngcrushed_15: -23607728
       card tower_scaled_10x_pngcrushed_2: 5679651023342847809
       card tower_scaled_10x_pngcrushed_3: -8472586378169061412
       card tower_scaled_10x_pngcrushed_4: 2504057069596714413
